@@ -1,0 +1,27 @@
+<nav class="items-center p-6 flex justify-between bg-slate-400 dark:bg-slate-900 text-gray-900 dark:text-gray-100">
+    <ul class="flex items-center">
+        <li class="px-4">
+            <a href="" class="hover:text-zinc-300">posts</a>
+        </li>
+        <li class="px-4">
+            <a href="" class="hover:text-zinc-300">contact</a>
+        </li>
+    </ul>
+    <div class="flex justify-end">
+        <a href="{% url 'change-theme' %}" class="bg-gray-100 px-4 max-auto rounded-xl">
+            
+            {% if is_dark_theme %}
+                
+               <i class="text-red-700">
+                sunny
+               </i>
+              
+                
+            {% else %}
+                <i class="fa-solid fa-moon">
+                  pooo
+                </i>
+            {% endif %}
+        </a>
+    </div>
+</nav>
